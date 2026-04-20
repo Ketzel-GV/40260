@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<!DOCTYPE direccion SYSTEM "">
+<direccion>
+    <nombreCompleto>
+        <nombre>Tania Ketzel</nombre>
+        <apellidos>Gómez Velásquez</apellidos> 
+    </nombreCompleto>
+    <correo>takegove2404@gmail.com</correo>
+    <telefono>2282888907</telefono>
+    <cumple>
+        <dia>24</dia>
+        <mes>04</mes>
+        <anio>2003</anio>
+    </cumple>
+<direccion>

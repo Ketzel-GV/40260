@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro_cocina SYSTEM "recetas.dtd">
+
 <libro_cocina>
-    <receta id="001" categoria="entrada">
+    <receta id="r001" categoria="postre">
+        <nombre>Flan Napolitano</nombre>
+        <ingredientes>
+            <ingrediente cantidad="190" unidad="gramos">Queso Crema</ingrediente>
+            <ingrediente cantidad="5" unidad="piezas">Huevo</ingrediente>
+            <ingrediente cantidad="1" unidad="cucharada">Vainilla</ingrediente>
+        </ingredientes>
+        <pasos>
+            <paso orden="1" accion="licuar">Todos los ingredientes base</paso>
+            <paso orden="2" accion="cocinar" tiempo="60" unidad_tiempo="minutos">Baño María</paso>
+        </pasos>
+    </receta>
+
+    <receta id="r002" categoria="postre">
+        <nombre>Cupcakes de Vainilla</nombre>
+        <ingredientes>
+            <ingrediente cantidad="250" unidad="gramos">Harina</ingrediente>
+            <ingrediente cantidad="100" unidad="gramos">Mantequilla</ingrediente>
+        </ingredientes>
+        <pasos>
+            <paso orden="1" accion="precalentar" temperatura="180">Horno</paso>
+            <paso orden="2" accion="hornear" tiempo="20" unidad_tiempo="minutos">Masa en moldes</paso>
+        </pasos>
+    </receta>
+
+    <receta id="003" categoria="entrada">
         <nombre>Guacamole</nombre>
         <ingredientes>
             <ingrediente cantidad="3" unidad="unidad">Aguacate</ingrediente>
@@ -11,39 +38,6 @@
             <paso orden="1" accion="picar">Cebolla</paso>
             <paso orden="2" accion="machacar" contenedor="bowl">Aguacate</paso>
             <paso orden="3" accion="mezclar">Cebolla, Aguacate, Sal</paso>
-        </pasos>
-    </receta>
-
-    <receta id="002" categoria="postre">
-        <nombre>Flan Napolitano</nombre>
-        <ingredientes>
-            <ingrediente cantidad="1" unidad="lata">Leche Condensada</ingrediente>
-            <ingrediente cantidad="1" unidad="lata">Leche Evaporada</ingrediente>
-            <ingrediente cantidad="190" unidad="gramo">Queso Crema</ingrediente>
-            <ingrediente cantidad="5" unidad="unidad">Huevo</ingrediente>
-            <ingrediente cantidad="1" unidad="cucharada">Vainilla</ingrediente>
-            <ingrediente cantidad="0.75" unidad="taza">Azúcar</ingrediente>
-        </ingredientes>
-        <pasos>
-            <paso orden="1" accion="calentar" resultado="caramelo">Azúcar</paso>
-            <paso orden="2" accion="licuar">Ingredientes base</paso>
-            <paso orden="3" accion="cocinar" metodo="baño maria" tiempo="60" unidad_tiempo="minutos">Mezcla</paso>
-            <paso orden="4" accion="refrigerar" tiempo="4" unidad_tiempo="horas">Flan</paso>
-        </pasos>
-    </receta>
-
-    <receta id="003" categoria="postre">
-        <nombre>Cupcakes de Vainilla</nombre>
-        <ingredientes>
-            <ingrediente cantidad="250" unidad="gramo">Harina</ingrediente>
-            <ingrediente cantidad="100" unidad="gramo">Mantequilla</ingrediente>
-            <ingrediente cantidad="200" unidad="gramo">Azúcar</ingrediente>
-            <ingrediente cantidad="2" unidad="unidad">Huevo</ingrediente>
-        </ingredientes>
-        <pasos>
-            <paso orden="1" accion="precalentar" temperatura="180" unidad_temp="C">Horno</paso>
-            <paso orden="2" accion="acremar">Mantequilla con Azúcar</paso>
-            <paso orden="3" accion="hornear" tiempo="20" unidad_tiempo="minutos">Masa en capacillos</paso>
         </pasos>
     </receta>
 </libro_cocina>

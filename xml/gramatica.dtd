@@ -1,0 +1,22 @@
+<!ELEMENT libro_cocina (receta+)>
+<!ELEMENT receta (nombre, ingredientes, pasos)>
+<!ATTLIST receta
+    id ID #REQUIRED
+    categoria (entrada | plato_fuerte | postre | bebida) "plato_fuerte">
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente
+    cantidad CDATA #REQUIRED
+    unidad CDATA #REQUIRED>
+
+<!ELEMENT pasos (paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso
+    orden CDATA #REQUIRED
+    accion CDATA #REQUIRED
+    tiempo CDATA #IMPLIED
+    unidad_tiempo CDATA #IMPLIED
+    temperatura CDATA #IMPLIED>

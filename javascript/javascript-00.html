@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scal
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Título</h1>
+        <p>Esto es un párrafo</p>
+        <button>Hola</button>
+
+        <script>
+            //esto es un comentario javascript
+
+            const elemento = "cadena"
+            //var elemento = 0
+            //let elemento = [1,2,3,4]
+            console.log(elemento[0])
+
+            for (const key in element) {
+                console.log(key)
+            }
+
+            function saludar(){
+                console.log("hola mundo")
+            }
+
+            for (i=0; i < 10; i++)
+            console.log("hola mundo")
+            if(i != 5)
+            saludar();
+
+            //acceso al DOM
+            console.log(document.URL)
+            const html = document.getElementById("b")
+            console.log(html.innerText)
+            html.innerText = "Esto es un nuevo texto"
+
+            //recuperar datos del input
+            let entrada =document.getElementsByTagName("input")
+            console.log(entrada[0].value)
+            html.innerText = entrada[0].value
+            
+            /*
+            for (const key in entrada) {
+                if (!Object.hasOwn(entrada, key)) continue;
+                const element = entrada[key];
+                console.log(element)
+            }
+            */ 
+
+
+        </script>
+    </body>
+</html>
